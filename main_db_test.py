@@ -73,7 +73,6 @@ class DBHelper:
         self.sql.execute("UPDATE table_push SET pushStatus=? WHERE id=?", (pushStatus, id))
         self.db.commit()
 
-        # return self
 
     def all_in_one_create_tables(self, id):
         self.create_working_hours_table()

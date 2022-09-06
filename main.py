@@ -387,7 +387,8 @@ def answer(callback: types.CallbackQuery):
       #'end_minutes:45'
     elif key == 'push':
         switch_push_status(callback.message)
-        settings_func()
+        bot.send_message(callback.message.chat.id, text="Статус изменен")
+        return_to_main_menu_func(callback.message)
     else:
         bot.send_message(callback.message.chat.id, text='Неверный ключ' + key,
                          reply_markup=callback.message.reply_markup)
