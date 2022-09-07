@@ -14,7 +14,7 @@ from telegram_bot_calendar import DetailedTelegramCalendar, LSTEP
 import re
 from threading import Thread
 
-
+#
 bot = telebot.TeleBot('5345239769:AAGMA-jXu2iFkHkJ0D5HKlzVnva-zXzXYik')
 my_dict = {}
 # --------  1. Сделать инлайны кннопки для выбрать месяц + сделать так чтобы выбранный месяц писался от бота (кконкертный месяц)"!!!!!!!!!!!!!!!!!!!!
